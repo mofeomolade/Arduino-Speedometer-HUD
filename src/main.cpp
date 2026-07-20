@@ -4,8 +4,8 @@
 
 TinyGPSPlus gps;
 
-#define GPS_RX_PIN 2  // Connect this to the GPS TX pin
-#define GPS_TX_PIN 3  // Connect this to the GPS RX pin
+#define GPS_TX_PIN 2  // Connect this to the GPS TX pin
+#define GPS_RX_PIN 3  // Connect this to the GPS RX pin
 
 SoftwareSerial GPSSerial(GPS_RX_PIN, GPS_TX_PIN);
 
