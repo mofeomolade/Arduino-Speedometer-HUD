@@ -10,7 +10,7 @@ TinyGPSPlus gps;
 SoftwareSerial GPSSerial(GPS_RX_PIN, GPS_TX_PIN);
 
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(57600);
 
   GPSSerial.begin(9600);
 }
