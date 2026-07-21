@@ -74,7 +74,7 @@ void loop() {
           
           //Text calibration for 2 digit speeds
           display.setTextSize(7);
-          display.setCursor(20, 10);
+          display.setCursor(25, 10);
 
           //Print and activate display
           display.print(rounded_speed);
