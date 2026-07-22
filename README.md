@@ -17,7 +17,7 @@ A real-time digital speedometer that safely integrates with a car's electrical s
 - **Display:** 128x64 SPI OLED Display
 
 ### Wiring Overview
-* **Power:** Car 12V-14.4V $\rightarrow$ USB-C to DIN Modulet $\rightarrow$ to Arduino Vin Pin. Power peripherals using Arduino 5V and 3v3 pins.
+* **Power:** Car 12V-14.4V $\rightarrow$ USB-C to DIN Module $\rightarrow$ to Arduino Vin Pin. Power peripherals using Arduino 5V and 3v3 pins.
 * **GPS Data:** GY-NEO6MV2 TX $\rightarrow$ Arduino D2 (SoftwareSerial RX).
 * **OLED Display:** Connected via hardware SPI pins (D13 for Clock, D11 for Data) along with CS, DC, and Reset pins.
 
