@@ -4,7 +4,7 @@ A real-time digital speedometer that safely integrates with a car's electrical s
 
 ## Project Outline
 1. **Hardware Prototype:** Solder the Arduino, GPS, and SPI OLED screen on a breadboard.
-2. **Power Calibration:** Adjust the buck converter to step down car voltage to a safe 5V.
+2. **Power Supply:** USB-C to DIN module to enable power supply through the Vin pin instead of overloading the built-in USB-C port.
 3. **Software Implementation:** Code the NMEA parsing, serial communication, and hardware screen inversion.
 
 ---
@@ -15,10 +15,9 @@ A real-time digital speedometer that safely integrates with a car's electrical s
 - **Microcontroller:** Arduino Nano
 - **GPS Module:** GY-NEO6MV2 module with Ceramic Antenna
 - **Display:** 128x64 SPI OLED Display
-- **Power Regulator:** MP1584EN Buck Converter
 
 ### Wiring Overview
-* **Power:** Car 12V-14.4V $\rightarrow$ MP1584EN Input $\rightarrow$ Regulated 10V Output $\rightarrow$ to Arduino Vin Pin. Power peripherals using Arduino 5V and 3v3 pins.
+* **Power:** Car 12V-14.4V $\rightarrow$ USB-C to DIN Modulet $\rightarrow$ to Arduino Vin Pin. Power peripherals using Arduino 5V and 3v3 pins.
 * **GPS Data:** GY-NEO6MV2 TX $\rightarrow$ Arduino D2 (SoftwareSerial RX).
 * **OLED Display:** Connected via hardware SPI pins (D13 for Clock, D11 for Data) along with CS, DC, and Reset pins.
 
